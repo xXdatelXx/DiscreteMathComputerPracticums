@@ -3,7 +3,7 @@ namespace ComputerPracticum1;
 public sealed class GraphMatrices(Graph graph)
 {
    private Dictionary<int, IReadOnlyList<int>> Elements => graph.Elements;
-   
+
    public int[,] Adjacency()
    {
       var matrix = new int[Elements.Count, Elements.Count];
@@ -19,7 +19,7 @@ public sealed class GraphMatrices(Graph graph)
 
    public int[,] Incidence()
    {
-      int vertexCount = Elements.Count;
+      var vertexCount = Elements.Count;
       var matrix = new int[vertexCount, graph.EdgesCount()];
 
       foreach (var (vertex, edges) in Elements)
@@ -38,5 +38,4 @@ public sealed class GraphMatrices(Graph graph)
 
       return matrix;
    }
-
 }

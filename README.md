@@ -3,6 +3,7 @@
 ![image](https://github.com/user-attachments/assets/dbbafc92-d689-405d-bc9b-c3b40da27cb5)
 
 Code output:
+```
 Exercise 2
 Incidence matrix:
 0 1 0 0 1 0 0 0 0 
@@ -53,3 +54,4 @@ Exit power:
 Exercise 4
 Isolated:
 Leafs:
+```
